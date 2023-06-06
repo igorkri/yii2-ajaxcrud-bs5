@@ -1,12 +1,6 @@
 yii2-ajaxcrud 
 =============
 
-This is not my work, this repository created by [johitvn](https://github.com/igorkri/yii2-ajaxcrud), but because I (and maybe some other people) need to optimize this Gii Template with BS5, so I create new repository to accomodate it. If [johitvn](https://github.com/igorkri/yii2-ajaxcrud) already merge my PR, I will delete this repository.
-
-[![Latest Stable Version](https://poser.pugx.org/igorkri/yii2-ajaxcrud/v/stable)](https://packagist.org/packages/igorkri/yii2-ajaxcrud)
-[![License](https://poser.pugx.org/igorkri/yii2-ajaxcrud/license)](https://packagist.org/packages/igorkri/yii2-ajaxcrud)
-[![Total Downloads](https://poser.pugx.org/igorkri/yii2-ajaxcrud/downloads)](https://packagist.org/packages/igorkri/yii2-ajaxcrud)
-
 Gii CRUD template for Single Page Ajax Administration for yii2 
 
 ![yii2 ajaxcrud extension screenshot](https://c1.staticflickr.com/1/330/18659931433_6e3db2461d_o.png "yii2 ajaxcrud extension screenshot")
@@ -27,13 +21,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require --prefer-dist igorkri/yii2-ajaxcrud-bs4 "*"
+composer require --prefer-dist igorkri/yii2-ajaxcrud-bs5 "*"
 ```
 
 or add
 
 ```
-"igorkri/yii2-ajaxcrud-bs4": "*"
+"igorkri/yii2-ajaxcrud-bs5": "*"
 ```
 
 to the require section of your `composer.json` file.

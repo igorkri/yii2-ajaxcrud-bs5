@@ -15,7 +15,7 @@ class BulkButtonWidget extends Widget{
 	
 	public function run(){
 		$content = '<div class="pull-left">'.
-                   '<i class="fas fa-trash-alt"></i>&nbsp;&nbsp;З вибраними&nbsp;&nbsp;'.
+                   '&nbsp;&nbsp;З вибраними&nbsp;&nbsp;'.
                    $this->buttons.
                    '</div>';
 		return $content;

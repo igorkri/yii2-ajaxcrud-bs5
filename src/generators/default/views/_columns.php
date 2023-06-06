@@ -7,6 +7,7 @@ use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
 
 
+
 /* @var $this yii\web\View */
 /* @var $generator yii\gii\generators\crud\Generator */
 
@@ -19,15 +20,19 @@ echo "<?php\n";
 
 ?>
 use yii\helpers\Url;
+use kartik\grid\GridView;
 
 return [
     [
         'class' => 'kartik\grid\CheckboxColumn',
-        'width' => '20px',
+        'width' => '40px',
     ],
     [
         'class' => 'kartik\grid\SerialColumn',
         'width' => '30px',
+        // 'width' => '5%',
+        // 'vAlign' => GridView::ALIGN_MIDDLE,
+        // 'hAlign' => GridView::ALIGN_CENTER,
     ],
     <?php
     $count = 0;
@@ -36,16 +41,25 @@ return [
             echo "    // [\n";
             echo "        // 'class'=>'\kartik\grid\DataColumn',\n";
             echo "        // 'attribute'=>'" . $name . "',\n";
+            echo "        // 'width' => '5%',\n";
+            echo "        // 'vAlign' => GridView::ALIGN_MIDDLE,\n";
+            echo "        // 'hAlign' => GridView::ALIGN_CENTER,\n";
             echo "    // ],\n";
         } else if (++$count < 6) {
             echo "    [\n";
             echo "        'class'=>'\kartik\grid\DataColumn',\n";
             echo "        'attribute'=>'" . $name . "',\n";
+            echo "        // 'width' => '5%',\n";
+            echo "        'vAlign' => GridView::ALIGN_MIDDLE,\n";
+            echo "        'hAlign' => GridView::ALIGN_CENTER,\n";
             echo "    ],\n";
         } else {
             echo "    // [\n";
             echo "        // 'class'=>'\kartik\grid\DataColumn',\n";
             echo "        // 'attribute'=>'" . $name . "',\n";
+            echo "        // 'width' => '5%',\n";
+            echo "        // 'vAlign' => GridView::ALIGN_MIDDLE,\n";
+            echo "        // 'hAlign' => GridView::ALIGN_CENTER,\n";
             echo "    // ],\n";
         }
     }

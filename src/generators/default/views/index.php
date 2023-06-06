@@ -44,7 +44,7 @@ CrudAsset::register($this);
                     ['content'=>
                         Html::a('<i class="fas fa-plus"></i>', ['create'],
                         ['role'=>'modal-remote','title'=> 'Створити <?= Inflector::pluralize(Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>','class'=>'btn btn-default']).
-                        Html::a('<i class="fas fa-repeat"></i>', [''],
+                        Html::a('<i class="fas fa-redo"></i>', [''],
                         ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Оновити таблицю']).
                         '{toggleData}'.
                         '{export}'
@@ -78,7 +78,12 @@ CrudAsset::register($this);
 <?='<?php Modal::begin([
     "id"=>"ajaxCrudModal",
     //"size" => Modal::SIZE_EXTRA_LARGE,
-    "footer"=>"",// always need it for jquery plugin
+//    "scrollable" => true,
+//    "options" => [
+//        "data-bs-backdrop" => "static",
+//        // "class" => "modal-dialog-scrollable",
+//    ],
+    "footer"=>"", // always need it for jquery plugin
 ])?>'."\n"?>
 <?='<?php Modal::end(); ?>'?>
 
