@@ -6,6 +6,12 @@ use yii\helpers\StringHelper;
 /* @var $this yii\web\View */
 /* @var $generator yii\gii\generators\crud\Generator */
 
+
+$this->title = 'Редагування : ' . $model->id;
+$this->params['breadcrumbs'][] = ['label' => 'Список', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = $this->title;
+
 echo "<?php\n";
 ?>
 
