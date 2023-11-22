@@ -7,9 +7,9 @@ use yii\helpers\StringHelper;
 /* @var $generator yii\gii\generators\crud\Generator */
 
 
-$this->title = 'Редагування : ' . $model->id;
+$this->title = 'Редагування : ';
 $this->params['breadcrumbs'][] = ['label' => 'Список', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = ['label' => 1, 'url' => ['view', 'id' => 1]];
 $this->params['breadcrumbs'][] = $this->title;
 
 echo "<?php\n";
