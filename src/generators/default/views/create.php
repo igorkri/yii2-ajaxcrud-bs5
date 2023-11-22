@@ -6,11 +6,6 @@ use yii\helpers\StringHelper;
 /* @var $this yii\web\View */
 /* @var $generator yii\gii\generators\crud\Generator */
 
-
-$this->title = 'Створення нового запису';
-$this->params['breadcrumbs'][] = ['label' => 'Список', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
-
 echo "<?php\n";
 ?>
 
@@ -19,6 +14,10 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $model <?= ltrim($generator->modelClass, '\\') ?> */
+
+$this->title = 'Створення нового запису';
+$this->params['breadcrumbs'][] = ['label' => 'Список', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 
 ?>
 <div class="container">
